@@ -245,10 +245,10 @@ call s:h("SpellBad", { "fg": s:red, "gui": "underline", "cterm": "underline" }) 
 call s:h("SpellCap", { "fg": s:dark_yellow }) " Word that should start with a capital. This will be combined with the highlighting used otherwise.
 call s:h("SpellLocal", { "fg": s:dark_yellow }) " Word that is recognized by the spellchecker as one that is used in another region. This will be combined with the highlighting used otherwise.
 call s:h("SpellRare", { "fg": s:dark_yellow }) " Word that is recognized by the spellchecker as one that is hardly ever used. spell This will be combined with the highlighting used otherwise.
-call s:h("StatusLine", { "fg": s:white, "bg": s:cursor_grey }) " status line of current window
-call s:h("StatusLineNC", { "fg": s:comment_grey }) " status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-call s:h("StatusLineTerm", { "fg": s:white, "bg": s:cursor_grey }) " status line of current :terminal window
-call s:h("StatusLineTermNC", { "fg": s:comment_grey }) " status line of non-current :terminal window
+call s:h("StatusLine", { "fg": s:white, "bg": s:special_grey }) " status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+call s:h("StatusLineNC", { "fg": s:comment_grey, "bg": s:vertsplit }) " status line of current window
+call s:h("StatusLineTerm", { "fg": s:white, "bg": s:special_grey }) " status line of current :terminal window
+call s:h("StatusLineTermNC", { "fg": s:comment_grey, "bg": s:vertsplit }) " status line of non-current :terminal window
 call s:h("TabLine", { "fg": s:comment_grey }) " tab pages line, not active tab page label
 call s:h("TabLineFill", {}) " tab pages line, where there are no labels
 call s:h("TabLineSel", { "fg": s:white }) " tab pages line, active tab page label
